@@ -47,8 +47,7 @@ public class FileRepository
         }
         catch (Exception ex)
         {
-            System.out.println("Something happened");
-            System.out.println(ex.getMessage());
+
         }
     }
 }

@@ -39,7 +39,7 @@ public class WorkerThreadRepository implements Runnable
         try
         {
             String finalString = "\n" + "Worker - " + Thread.currentThread().getName().replace("pool-1-thread-", "") + " - " + textLine + " - " + getDatedTime() + "\n" + "*" + this.delay + " " + "delay" + "*";
-            System.out.println(finalString);
+            // System.out.println(finalString);
             this.writingFilePath = workers.get(Integer.parseInt(Thread.currentThread().getName().replace("pool-1-thread-", "")) - 1).writingFilePath;
             FileRepository fr = new FileRepository();
             fr.WriteFile(this.writingFilePath, finalString);
